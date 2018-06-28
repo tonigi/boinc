@@ -11,8 +11,9 @@ build_cmd="
     yum install -y libtool git gcc-c++
     cd /boinc
     ./_autosetup
-    ./configure --disable-client --disable-manager --disable-server
+    ./configure --disable-client --disable-manager --disable-server --enable-boinczip
     make -j8
+    make -C samples/wrapper
 "
 
 crossbuild_cmd="
@@ -23,7 +24,8 @@ crossbuild_cmd="
 
 
 
-docker create --mount type=bind,source=$DIR/..,destination=/boinc -it --name boinc-build \
+docker create --mount type=bind,source=$DIR/..,destination=/boinc \
+	-it --name boinc-build \
 	centos:6
 	
 docker start boinc-build
