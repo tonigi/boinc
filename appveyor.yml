@@ -40,6 +40,8 @@ build_script:
 
 test: off
 
+# Artifacts path C:\projects\boinc\win_build\.\Build\x64\Debug\wrapper_6.1_windows_x86_64.exe is not a relative path. Please set it relative to the build folder C:\projects\boinc 
+
 artifacts:
 - path: '**\wrapper*.exe'
 - path: win_build\Build\x64\Debug\wrapper_6.1_windows_x86_64.exe
