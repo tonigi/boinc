@@ -5,7 +5,7 @@ matrix:
   fast_finish: true
 
 platform:
-#  - Win32
+  - Win32
   - x64
 
 pull_requests:
@@ -18,8 +18,8 @@ branches:
 skip_tags: true
 
 configuration:
-#  - Debug
-  - Release
+  - Debug
+#  - Release
 
 environment:
   matrix:
