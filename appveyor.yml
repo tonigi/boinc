@@ -42,7 +42,5 @@ test: off
 
 artifacts:
 - path: '**\wrapper*.exe'
-- path: C:\projects\boinc\win_build\.\Build\x64\Debug\wrapper_6.1_windows_x86_64.exe
-- path: Build\x64\Debug\wrapper_6.1_windows_x86_64.exe
-- path: Build\x64\*\wrapper_6.1_windows_x86_64.exe
-
+- path: win_build\Build\x64\Debug\wrapper_6.1_windows_x86_64.exe
+- path: win_build\Build\x64\*\wrapper_6.1_windows_x86_64.exe
